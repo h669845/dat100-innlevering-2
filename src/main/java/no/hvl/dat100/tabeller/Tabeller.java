@@ -88,8 +88,21 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+		int[] nytabell = new int[tabell.length];
+
+	    for(int i = 0; i<tabell.length; i++) {
+	        nytabell[i] = tabell[tabell.length - 1 -i];
+	    }
+
+	    System.out.print("[ ");
+	    for (int i = 0; i < nytabell.length; i++) {
+	        System.out.print(nytabell[i] + " ");
+	    }
+	    System.out.print("]");
+	    System.out.println("");
+
+	    return nytabell;
+		
 	}
 
 	// g)
